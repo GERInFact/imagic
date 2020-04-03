@@ -1,3 +1,27 @@
+/* Fonts */
+/* Ruhl Regular */
+@font-face {
+  font-family: "Ruhl";
+  src: url(/fonts/FrankRuhlLibre-Regular.ttf);
+}
+/* Ruhl Regular End */
+
+/* Ruhl Medium */
+@font-face {
+  font-family: "Ruhl Medium";
+  src: url(/fonts/FrankRuhlLibre-Medium.ttf);
+}
+/* Ruhl Medium End */
+
+/* Vibes */
+@font-face {
+  font-family: "Vibes";
+  src: url(/fonts/GreatVibes-Regular.ttf);
+}
+/* Vibes End */
+
+/* Fonts End */
+
 /* Global Styles*/
 * {
   margin: 0;
@@ -17,7 +41,11 @@ html {
   --background_color: #414141;
   --text_color_gray: #525252;
 }
+body {
+  font-family: "Ruhl", sans-serif;
+}
 h1 {
+  font-family: "Vibes", sans-serif;
   font-size: var(--header_size_1);
 }
 h2 {
@@ -49,33 +77,9 @@ ul {
 
 /* Helper Classes */
 .flex-col-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* Helper Classes End */
-
-/* Fonts */
-/* Ruhl Regular */
-@font-face {
-    font-family: "Ruhl";
-    src: url(/fonts/FrankRuhlLibre-Regular.ttf);
-}
-/* Ruhl Regular End */
-
-/* Ruhl Medium */
-@font-face {
-    font-family: "Ruhl Medium";
-    src: url(/fonts/FrankRuhlLibre-Medium.ttf);
-}
-/* Ruhl Medium End */
-
-/* Vibes */
-@font-face {
-    font-family: "Vibes";
-    src: url(/fonts/GreatVibes-Regular.ttf);
-}
-/* Vibes End */
-
-/* Fonts End */
