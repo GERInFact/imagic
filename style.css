@@ -46,3 +46,12 @@ ul {
 }
 
 /* Global Styles End*/
+
+/* Helper Classes */
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Helper Classes End */
