@@ -15,7 +15,7 @@ html {
   --big_text: var(--header_size_4_5);
   --special_color: #906272;
   --background_color: #414141;
-  --text_color_gray: #525252; 
+  --text_color_gray: #525252;
 }
 h1 {
   font-size: var(--header_size_1);
@@ -37,6 +37,12 @@ label,
 input,
 p {
   font-size: var(--paragraph_size);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
 }
 
 /* Global Styles End*/
