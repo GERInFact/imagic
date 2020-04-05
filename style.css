@@ -138,6 +138,7 @@ ul {
   margin: 5rem 10rem;
 }
 .wrapper_gallery-link {
+  margin-bottom: 5rem;
   padding: 2rem 8rem;
   border: 3px solid black;
 }
