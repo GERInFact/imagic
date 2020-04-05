@@ -130,6 +130,7 @@ ul {
   overflow: hidden;
 }
 
+/* Wrapper  */
 .main-intro-section_wrapper {
   flex: 2 1 40rem;
 }
@@ -145,6 +146,9 @@ ul {
   padding: 2rem 8rem;
   border: 3px solid black;
 }
+/* Wrapper End */
+
+/* Ginger Woman */
 .main-intro-section_ginger-woman {
   flex: 1 1 40rem;
   background: linear-gradient(#dad8dd, #dad1d4);
@@ -157,6 +161,8 @@ ul {
   object-fit: cover;
   z-index: 1;
 }
+
+/* Plant */
 .plant {
   position: absolute;
   top: 0;
@@ -169,6 +175,8 @@ ul {
 .plant2 {
   right: -30%;
 }
+/* Plant End */
+/* Ginger Woman End */
 /* Main End */
 
 /* Animation */
