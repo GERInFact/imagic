@@ -67,6 +67,7 @@ p {
   font-size: var(--paragraph_size);
 }
 a {
+  color: #000000;
   text-decoration: none;
 }
 ul {
@@ -83,3 +84,34 @@ ul {
   align-items: center;
 }
 /* Helper Classes End */
+
+/* Header */
+.main-header {
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+}
+/* Nav */
+.main-header_nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+/* Title */
+.nav_title {
+  flex: 3 1 30rem;
+}
+/* Title End */
+
+/* Menu */
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 30rem;
+}
+/* Menu End */
+/* Nav End */
+/* Header End */
