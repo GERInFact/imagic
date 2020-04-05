@@ -88,6 +88,7 @@ ul {
 
 /* Header */
 .main-header {
+  position: relative; /*fixes the box shadow issue with backgrounds*/
   box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
 }
 /* Nav */
