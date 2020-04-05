@@ -161,6 +161,7 @@ ul {
   position: absolute;
   top: 0;
   z-index: -1;
+  animation: plant-fade-in 1.5s ease-in-out;
 }
 .plant1 {
   left: -20%;
@@ -171,12 +172,25 @@ ul {
 /* Main End */
 
 /* Animation */
+/* Startup */
 @keyframes startup {
   from {
     opacity: 0;
-  } 
+  }
   to {
     opacity: 1;
   }
 }
+/* Startup End */
+
+/* Plant Fade In */
+@keyframes plant-fade-in {
+  from {
+    transform: translateY(10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+/* Plant Fade In End */
 /* Animation End */
