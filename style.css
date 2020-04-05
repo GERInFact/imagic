@@ -43,6 +43,7 @@ html {
 }
 body {
   font-family: "Ruhl", sans-serif;
+  animation: startup 1s ease-in-out;
 }
 h1 {
   font-family: "Vibes", sans-serif;
@@ -168,3 +169,14 @@ ul {
   right: -30%;
 }
 /* Main End */
+
+/* Animation */
+@keyframes startup {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+/* Animation End */
