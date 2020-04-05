@@ -122,8 +122,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   min-height: 90vh;
-  width: 90%;
-  margin: 0 auto;
+  width: 95%;
+  margin: 0 0 0 auto;
   text-align: center;
 }
 
@@ -143,6 +143,7 @@ ul {
 }
 .main-intro-section_ginger-woman {
   flex: 1 1 40rem;
+  background: linear-gradient(#dad8dd, #dad1d4);
 }
 .ginger-woman_img {
   width: 100%;
