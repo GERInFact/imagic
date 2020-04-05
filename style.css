@@ -63,7 +63,8 @@ li,
 button,
 label,
 input,
-p {
+p,
+a {
   font-size: var(--paragraph_size);
 }
 a {
@@ -115,3 +116,37 @@ ul {
 /* Menu End */
 /* Nav End */
 /* Header End */
+
+/* Main */
+.main-intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-intro-section_wrapper {
+  flex: 2 1 40rem;
+}
+
+.wrapper_title {
+  margin: 3rem;
+}
+.wrapper_text {
+  margin: 5rem 10rem;
+}
+.wrapper_gallery-link {
+  padding: 2rem 8rem;
+  border: 3px solid black;
+}
+.main-intro-section_ginger-woman {
+  flex: 1 1 40rem;
+}
+.ginger-woman_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Main End */
