@@ -108,6 +108,12 @@ ul {
 }
 /* Title End */
 
+/* Burger Check Mark */
+.nav_burger-check-mark {
+  display: none;
+}
+/* Burger Check Mark End */
+
 /* Menu */
 .nav_menu {
   display: flex;
@@ -167,7 +173,8 @@ ul {
   position: absolute;
   top: 0;
   z-index: -1;
-  animation: plant-fade-in 1.5s ease-in-out, plant-shaking 1.5s ease-in-out infinite alternate 1.5s;
+  animation: plant-fade-in 1.5s ease-in-out,
+    plant-shaking 1.5s ease-in-out infinite alternate 1.5s;
   transform-origin: bottom;
 }
 .plant1 {
@@ -214,3 +221,75 @@ ul {
 }
 /* Plant Shaking End */
 /* Animation End */
+
+/* Media Queries */
+@media screen and (max-width: 842px) {
+  /* Header */
+  /* Navigation */
+  /* Menu */
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--background_color);
+    transition: transform 0.5s ease;
+  }
+  .menu_item a {
+    font-size: var(--header_size_3);
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  /* Burger Check Mark */
+  .nav_burger-check-mark {
+    display: block;
+    position: absolute;
+    right: 5%;
+    width: 3rem;
+    height: 3rem;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .nav_burger-check-mark:checked + .nav_menu {
+    transform: translate(-100%);
+  }
+  /* Burger Check Mark End */
+  /* Menu End */
+
+  /* Burger Bar */
+  .burger_bar {
+    position: relative;
+    margin: 0.2rem;
+    padding: 0.2rem 1.3rem;
+    background-color: var(--text_color_gray);
+    transition: all 0.5s ease;
+  }
+
+  .nav_burger-check-mark:checked ~ .nav_burger .burger_bar {
+    background-color: #ffffff;
+  }
+
+  .nav_burger-check-mark:checked ~ .nav_burger .burger_bar:first-child {
+    transform: rotateZ(45deg)
+  }
+
+  .nav_burger-check-mark:checked ~ .nav_burger .burger_bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav_burger-check-mark:checked ~ .nav_burger .burger_bar:last-child {
+    transform: rotateZ(-45deg) translate(40%, -300%);
+  }
+  /* Burger Bar End */
+
+  /* Navigation End */
+  /* Header End */
+}
+/* Media Queries End */
