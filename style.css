@@ -95,7 +95,6 @@ ul {
 /* Nav */
 .main-header_nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   min-height: 10vh;
   width: 90%;
