@@ -290,5 +290,14 @@ ul {
 
   /* Navigation End */
   /* Header End */
+
+  /* Intro Section */
+  .main-intro-section {
+    width: 100%;
+  }
+  .wrapper_text {
+    margin: 5rem 1rem;
+  }
+  /* Intro Section End */
 }
 /* Media Queries End */
