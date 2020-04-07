@@ -284,6 +284,7 @@ ul {
     justify-content: space-around;
     background-color: var(--background_color);
     transition: transform 0.5s ease;
+    z-index: 3;
   }
   .menu_item a {
     font-size: var(--header_size_3);
@@ -293,7 +294,7 @@ ul {
   /* Burger Check Mark */
   .nav_burger-check-mark {
     display: block;
-    position: absolute;
+    position: fixed;
     right: 5%;
     width: 3rem;
     height: 3rem;
@@ -315,10 +316,13 @@ ul {
     padding: 0.2rem 1.3rem;
     background-color: var(--text_color_gray);
     transition: all 0.5s ease;
+    z-index: 9;
   }
 
   .nav_burger-check-mark:checked ~ .nav_burger .burger_bar {
+    position: fixed;
     background-color: #ffffff;
+    right: 5%;
   }
 
   .nav_burger-check-mark:checked ~ .nav_burger .burger_bar:first-child {
@@ -330,7 +334,7 @@ ul {
   }
 
   .nav_burger-check-mark:checked ~ .nav_burger .burger_bar:last-child {
-    transform: rotateZ(-45deg) translate(40%, -300%);
+    transform: rotateZ(-45deg);
   }
   /* Burger Bar End */
   /* Navigation End */
