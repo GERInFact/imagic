@@ -393,8 +393,11 @@ ul {
   /* About Section End */
 
   /* Gallery Section */
-  .gallery-section_gallery {
+  .gallery {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+  .gallery_header {
+    padding: 1rem 2rem;
   }
   .gallery_item {
     grid-column: auto;
