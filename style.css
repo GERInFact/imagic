@@ -343,6 +343,9 @@ ul {
 .footer_title {
   flex: 3 1 40rem;
 }
+.footer_title span {
+  font-family: "Vibes";
+}
 /* Title End */
 
 /* Social Media */
