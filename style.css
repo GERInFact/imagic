@@ -40,6 +40,7 @@ html {
   --special_color: #906272;
   --background_color: #414141;
   --text_color_gray: #525252;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Ruhl", sans-serif;
