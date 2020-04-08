@@ -36,7 +36,7 @@ html {
   --header_size_3: calc(3rem + 1vw);
   --header_size_4_5: calc(2.4rem + 1vw);
   --paragraph_size: calc(1.5rem + 1vw);
-  --big_text: var(--header_size_4_5);
+  --big_text: calc(6rem + 1vw);
   --special_color: #906272;
   --background_color: #414141;
   --text_color_gray: #525252;
@@ -146,6 +146,7 @@ ul {
 }
 .wrapper_text {
   margin: 5rem 10rem;
+  color: var(--text_color_gray);
 }
 .wrapper_gallery-link {
   margin-bottom: 5rem;
@@ -261,6 +262,55 @@ ul {
   grid-row: 1/3;
 }
 /* Gallery End */
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+}
+.contact-section_form-wrapper {
+  flex: 3 1 40rem;
+  margin: 3rem 0;
+}
+.form-wrapper_title {
+  margin-bottom: 5rem;
+}
+.form-wrapper_title span{
+  font-size: var(--big_text);
+  color: var(--special_color);
+}
+.form-wrapper_form {
+  align-items: flex-start;
+}
+.form_label {
+  color: var(--text_color_gray);
+  margin: 2rem 0;
+}
+.form_email {
+  border: 0;
+  padding: 1rem;
+  background-color: var(--background_color);
+  color: #ffffff;
+}
+.form_submit  {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 2rem;
+  border: 0;
+  background-color: var(--special_color);
+  color: #ffffff;
+  cursor: pointer;
+}
+.contact-section_image-container {
+  flex: 1 1 40rem;
+}
+.image-container_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Contact Section End */
 /* Main End */
 
 /* Animation */
