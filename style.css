@@ -176,7 +176,7 @@ ul {
   height: 100%;
   z-index: -1;
   animation: plant-fade-in 1.5s ease-in-out,
-  plant-shaking 1.5s ease-in-out infinite alternate 1.5s;
+    plant-shaking 1.5s ease-in-out infinite alternate 1.5s;
   transform-origin: bottom;
 }
 .plant1 {
@@ -225,7 +225,8 @@ ul {
 .info_title {
   font-family: "Vibes";
 }
-.life_title, .work_title {
+.life_title,
+.work_title {
   margin: 2rem 0;
   font-family: "Ruhl Medium";
 }
@@ -244,7 +245,7 @@ ul {
   top: 50%;
   left: 50%;
   padding: 2rem 10rem;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: var(--background_color);
   color: #ffffff;
   text-align: center;
@@ -269,20 +270,26 @@ ul {
   flex-wrap: wrap;
   min-height: 90vh;
 }
+/* Wrapper */
 .contact-section_form-wrapper {
   flex: 3 1 40rem;
   margin: 3rem 0;
 }
+/* Title */
 .form-wrapper_title {
   margin-bottom: 5rem;
 }
-.form-wrapper_title span{
+.form-wrapper_title span {
   font-size: var(--big_text);
   color: var(--special_color);
 }
+/* Title End */
+
+/* Form */
 .form-wrapper_form {
   align-items: flex-start;
 }
+/* Email */
 .form_label {
   color: var(--text_color_gray);
   margin: 2rem 0;
@@ -293,7 +300,10 @@ ul {
   background-color: var(--background_color);
   color: #ffffff;
 }
-.form_submit  {
+/* Email End */
+
+/* Submit */
+.form_submit {
   width: 100%;
   margin: 5rem 0;
   padding: 2rem;
@@ -302,6 +312,11 @@ ul {
   color: #ffffff;
   cursor: pointer;
 }
+/* Submit End */
+/* Form End */
+/* Wrapper End */
+
+/* Image Container */
 .contact-section_image-container {
   flex: 1 1 40rem;
 }
@@ -310,8 +325,36 @@ ul {
   height: 100%;
   object-fit: cover;
 }
+/* Image Container End */
 /* Contact Section End */
 /* Main End */
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 10vh;
+  padding: 3rem 5%;
+  background-color: var(--background_color);
+  color: #ffffff;
+}
+/* Title */
+.footer_title {
+  flex: 3 1 40rem;
+}
+/* Title End */
+
+/* Social Media */
+.footer_social-media {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Social Media End */
+/* Footer End */
 
 /* Animation */
 /* Startup */
@@ -452,8 +495,20 @@ ul {
   .gallery_item {
     grid-column: auto;
     grid-row: auto;
-
   }
   /* Gallery Section End */
+
+  /* Contact Section */
+  .contact-section_image-container {
+    order: -1;
+  }
+  /* Contact Section End */
+
+  /* Footer */
+  .footer_title {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  /* Footer End */
 }
 /* Media Queries End */
